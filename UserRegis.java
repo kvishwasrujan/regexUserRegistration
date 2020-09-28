@@ -1,16 +1,17 @@
 package regexJava;
 
-//importing packages
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class RegexUC8 {
+public class regexUC9 {
 	public static void main(String[] args) {
-		// condition for Password
-		final String PASSWORD = "^(?=.*[A-Z])(?.*[0-9])(?.*[!@#$%^&*])[a-zA-Z0-9]{8}$";
-		final String INPUT = "Adeu35bg";
-		Pattern pattern = Pattern.compile(PASSWORD);
+		// main method
+		// condition for Email
+		final String Email = "^abc.{4}[a-z]{3}@bl.co.{7}[a-z]{2}$";
+		final String INPUT = "abc.xyz@bl.co.ww";
+		Pattern pattern = Pattern.compile(Email);
 		Matcher matcher = pattern.matcher(INPUT);
 		System.out.println("Input String matches regex-" + matcher.matches());
 	}
 }
+
